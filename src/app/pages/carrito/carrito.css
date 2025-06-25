@@ -1,0 +1,91 @@
+/* Estilo global futurista */
+:host {
+  display: block;
+  font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+  background-color: #0e0e10;
+  color: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe7;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor de productos */
+.carrito-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Tarjeta de producto */
+.producto {
+  background: linear-gradient(145deg, #1a1a1f, #1e1e23);
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 231, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 231, 0.3);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.producto h3 {
+  color: #00ffe7;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.producto strong {
+  color: #ffffff;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+button {
+  background-color: transparent;
+  color: #00ffe7;
+  border: 1px solid #00ffe7;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #00ffe7;
+  color: #000;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+/* Botón de vaciar carrito */
+button:last-of-type {
+  display: block;
+  margin: 3rem auto 0;
+}

@@ -1,0 +1,7 @@
+<!-- product-detail.component.html -->
+<div *ngIf="producto">
+  <h2>{{ producto.nombre }}</h2>
+  <img [src]="producto.imagen" [alt]="producto.nombre">
+  <p>{{ producto.descripcion }}</p>
+  <strong>{{ producto.precio }}</strong>
+</div>

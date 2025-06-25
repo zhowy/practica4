@@ -1,0 +1,15 @@
+<h1>Mi carrito</h1>
+
+<section class="carrito-productos">
+  <article class="producto" *ngFor="let producto of productosCarrito">
+    <img [src]="producto.imagen" [alt]="producto.nombre" />
+    <h3>{{ producto.nombre }}</h3>
+    <p>{{ producto.descripcion }}</p>
+    <strong>Precio: ${{ producto.precio }}</strong>
+    <button (click)="quitarProducto(producto.id)">Quitar producto</button>
+  </article>
+</section>
+
+<button (click)="vaciarCarrito()">Vaciar carrito</button>
+
+

@@ -1,9 +1,10 @@
 
+
 <div class="hero-container">
   <div class="hero-content">
     <h1 class="hero-title">Nuestros<span> Productos</span></h1>
     <div class="hero-image-container">
-      <img src="/img/p1.jpg" alt="logoempresacelulares" class="hero-image">
+      <img src="/img/P1.png" alt="logoempresacelulares" class="hero-image">
     </div>
   <section class="productos">
     @for(producto of productos; track producto.id){
@@ -13,7 +14,8 @@
             <p>{{producto.descripcion}}</p>
             <strong>{{producto.precio}}</strong>
             <br>
-            <button class="cta-button">Ver más</button>
+           <button class="cta-button" [routerLink]="['/product-detail', producto.id]">Ver más</button>
+            <button class="cta-button" (click)="agregarAlCarrito(producto)">Agregar al Carrito</button>
         </article>
     }
 </section>
