@@ -17,31 +17,31 @@ export class Products {
   private products:Product[] = [
     {
       id: 1,
-      nombre: 'Honda Transa LP',
-      descripcion : 'Ideal para ciudad',
-      precio: 6500,
-      imagen: '/img/honda-transalp.jpg'
+      nombre: 'Red Magic 10s Pro',
+      descripcion : 'El Mas Potente Del Mundo',
+      precio: 16500,
+      imagen: '/img/r1.jpeg'
     },
     {
       id: 2,
-      nombre: 'Kawasaky 600',
+      nombre: 'Pixel 9 pro XL',
       descripcion: 'Potente y elegante',
-      precio: 9200,
-      imagen: '/img/kawasaky 600.jpg'
+      precio: 29200,
+      imagen: '/img/pixel.jpeg'
     },
     {
       id: 3,
-      nombre: 'Kawasaky KX 250',
-      descripcion: 'Moderna y económica',
-      precio: 3900,
-      imagen: '/img/kawasaky-kx250.jpg'
+      nombre: 'Galaxy Fold 6',
+      descripcion: 'Una tablet compacta',
+      precio: 39000,
+      imagen: '/img/fold.jpeg'
     },
    {
       id: 4,
-      nombre: 'Suzuki 1200',
-      descripcion: 'Moderna y económica',
-      precio: 13900,
-      imagen: '/img/suzuki-1200.jpg'
+      nombre: 'Rog Phone 8 pro',
+      descripcion: 'Ideal para gamin',
+      precio: 33900,
+      imagen: '/img/rog.png'
    }
   ]
   constructor(){}

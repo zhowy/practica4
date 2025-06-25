@@ -7,6 +7,8 @@
 img{
     width: 100%;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
 }
