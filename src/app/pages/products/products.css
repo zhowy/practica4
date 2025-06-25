@@ -1,0 +1,10 @@
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+.producto{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 25%;
+}
